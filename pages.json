@@ -9,7 +9,10 @@
 	  "path" : "pages/cate/cate"
 	},
 	{
-	  "path" : "pages/my/my"
+	  "path" : "pages/my/my",
+    "style": {
+               "backgroundColor": "#ffffff"
+             }
 	}],
   "subPackages": [{
     "root":"subpkg",
@@ -19,7 +22,7 @@
       "style": {
                  "onReachBottomDistance": 150,
                  "enablePullDownRefresh": true,
-                 "backgroundColor": "#F8F8F8"
+                 "backgroundColor": "#ffffff"
                }
      },
      {"path" : "search/search"}

@@ -47,6 +47,9 @@
 </template>
 
 <script>
+  // 导入自己封装的 mixin 模块
+  import badgeMix from '@/mixins/tabbar-badge.js'
+  
   export default {
     data() {
       return {
@@ -58,6 +61,8 @@
         
       };
     },
+    // 将 badgeMix 混入到当前的页面中进行使用
+    mixins: [badgeMix],
     onLoad() {
       // 2. 在小程序页面刚加载的时候，调用获取轮播图数据的方法
       this.getSwiperList()
